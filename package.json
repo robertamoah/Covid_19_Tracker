@@ -1,0 +1,32 @@
+{
+  "name": "covid_19_tracker",
+  "version": "1.0.0",
+  "description": "Covid Tracking App, shows rates of infections",
+  "main": "server/server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertamoah/Covid_19_Tracker.git"
+  },
+  "keywords": [
+    "covid_19",
+    "testin"
+  ],
+  "author": "Robert Pittman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertamoah/Covid_19_Tracker/issues"
+  },
+  "homepage": "https://github.com/robertamoah/Covid_19_Tracker#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  }
+}
