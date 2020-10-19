@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-let port = 8080;
+let port = process.env.PORT || 8080;
 
 require("./Routes/Index")(app);
 
