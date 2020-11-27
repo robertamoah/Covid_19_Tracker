@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import { Badge } from "reactstrap";
+
+import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 
 import styled from "styled-components";
 
@@ -9,12 +10,12 @@ const Styles = styled.div`
     color: black;
   }
   .jumbo {
-    background-color: #f0f8ff;
+    background-color: blue;
     height: 150px;
   }
 `;
 
-const Jambotron = () => {
+const Footer = () => {
   return (
     <Fragment>
       <Styles>
@@ -50,4 +51,4 @@ const Jambotron = () => {
   );
 };
 
-export default Jambotron;
+export default Footer;

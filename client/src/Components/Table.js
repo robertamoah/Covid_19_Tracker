@@ -66,13 +66,13 @@ const Table1 = () => {
           style={{
             overflow: "scroll",
             height: "400px",
-            // width: "200px",
+            width: "600px",
             // marginLeft: "-0px",
           }}
         >
           <Table celled>
             <Table.Header>
-              <div className="sticky-top" />
+              <div />
               <Table.Row>
                 <Table.HeaderCell>Countries</Table.HeaderCell>
                 <Table.HeaderCell>Deaths</Table.HeaderCell>
@@ -93,12 +93,12 @@ const Table1 = () => {
                           <Table.Cell>
                             <Header as="h2" image>
                               <Image
-                                stye={{ cursor: "pointer" }}
                                 onClick={() => handleCountryPress(element)}
                                 src={element.countryInfo.flag}
                                 rounded
-                                size="huge"
+                                size="tiny"
                               />
+
                               <Header.Content>
                                 {element.country}
                                 <Header.Subheader>

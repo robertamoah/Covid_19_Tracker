@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
-    background-color: grey;
+    background-color: #007FFF;
 
   }
   }
@@ -16,7 +16,7 @@ const Styles = styled.div`
     }
   }
   .logoName {
-    color: red;
+    color: white;
     font-size: 30px !important;
     line-height: 1.09;
   }

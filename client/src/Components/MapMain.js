@@ -30,7 +30,7 @@ const MapMain = (mapProps) => {
       <ReactMapGL
         {...viewPoint}
         mapboxApiAccessToken="pk.eyJ1Ijoicm9iZXJ0YW1vYWgiLCJhIjoiY2p6NDVmcTZ4MGFxZjNkcDYybWYxeTY3cCJ9.7GpGK5SyB-Z8xdfy00gLig"
-        mapStyle="mapbox://styles/robertamoah/ckgds03633x7t19mw933em0x3"
+        mapStyle="mapbox://styles/robertamoah/ckgglwikx1wnf19p71r89a9wj"
         onViewportChange={(viewport) => {
           setViewPoint(viewport);
         }}
@@ -62,7 +62,7 @@ const MapMain = (mapProps) => {
                       <Button as="div" labelPosition="right">
                         <Button color="red">
                           <Icon name="heart" />
-                          Like
+                          Test
                         </Button>
                         <Label as="a" basic color="red" pointing="left">
                           {element.tests}
